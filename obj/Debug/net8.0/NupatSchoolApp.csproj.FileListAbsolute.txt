@@ -1,0 +1,14 @@
+C:\Users\hp\source\repos\NupatSchoolApp\bin\Debug\net8.0\NupatSchoolApp.exe
+C:\Users\hp\source\repos\NupatSchoolApp\bin\Debug\net8.0\NupatSchoolApp.deps.json
+C:\Users\hp\source\repos\NupatSchoolApp\bin\Debug\net8.0\NupatSchoolApp.runtimeconfig.json
+C:\Users\hp\source\repos\NupatSchoolApp\bin\Debug\net8.0\NupatSchoolApp.dll
+C:\Users\hp\source\repos\NupatSchoolApp\bin\Debug\net8.0\NupatSchoolApp.pdb
+C:\Users\hp\source\repos\NupatSchoolApp\obj\Debug\net8.0\NupatSchoolApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\source\repos\NupatSchoolApp\obj\Debug\net8.0\NupatSchoolApp.AssemblyInfoInputs.cache
+C:\Users\hp\source\repos\NupatSchoolApp\obj\Debug\net8.0\NupatSchoolApp.AssemblyInfo.cs
+C:\Users\hp\source\repos\NupatSchoolApp\obj\Debug\net8.0\NupatSchoolApp.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\NupatSchoolApp\obj\Debug\net8.0\NupatSchoolApp.dll
+C:\Users\hp\source\repos\NupatSchoolApp\obj\Debug\net8.0\refint\NupatSchoolApp.dll
+C:\Users\hp\source\repos\NupatSchoolApp\obj\Debug\net8.0\NupatSchoolApp.pdb
+C:\Users\hp\source\repos\NupatSchoolApp\obj\Debug\net8.0\NupatSchoolApp.genruntimeconfig.cache
+C:\Users\hp\source\repos\NupatSchoolApp\obj\Debug\net8.0\ref\NupatSchoolApp.dll
