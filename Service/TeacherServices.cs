@@ -10,13 +10,12 @@ namespace NupatSchoolApp.Service
     {
         public List<Teacher> Teachers { get; set; } = new List<Teacher>
         {
-            new Teacher { Id = 1, TeacherId = "TEA/1/001", FirstName = "Ayo", LastName = "Ogunrinde", Email = "Ayo@gmail.com", Course = "Law", Level = "1" }
+            new Teacher { Id = 1, TeacherId = "TEA/1/001", FirstName = "Ayo", LastName = "Ogunrinde", Email = "Ayo@gmail.com", Course = "Law"}
         };
 
-        public void AddTeacher(string firstName, string lastName, string level, string course, string email)
+        public void AddTeacher(string firstName, string lastName, string course, string email)
         {
             var id = Teachers.Count + 1;
-            string teacherId = $"TEA/{level}/{id:D3}";
 
             if (Teachers.Any(t => t.Email.Equals(email, StringComparison.OrdinalIgnoreCase)))
             {
@@ -29,14 +28,13 @@ namespace NupatSchoolApp.Service
                 Id = id,
                 FirstName = firstName,
                 LastName = lastName,
-                Level = level,
                 Course = course,
                 Email = email,
-                TeacherId = teacherId
+                TeacherId = $"TEA/{course}/{id:D3}"
             };
 
             Teachers.Add(newTeacher);
-            Console.WriteLine($"{newTeacher.LastName} {newTeacher.FirstName} is registered with ID {teacherId}");
+            Console.WriteLine($"{newTeacher.LastName} {newTeacher.FirstName} is registered with ID {newTeacher.TeacherId}");
         }
 
         public List<Teacher> GetTeachers()
@@ -70,7 +68,6 @@ namespace NupatSchoolApp.Service
                 t.FirstName.Contains(parameter, StringComparison.OrdinalIgnoreCase) ||
                 t.LastName.Contains(parameter, StringComparison.OrdinalIgnoreCase) ||
                 t.Email.Contains(parameter, StringComparison.OrdinalIgnoreCase) ||
-                t.Level.Contains(parameter, StringComparison.OrdinalIgnoreCase) ||
                 t.Course.Contains(parameter, StringComparison.OrdinalIgnoreCase)
             ).ToList();
 
@@ -85,7 +82,7 @@ namespace NupatSchoolApp.Service
 
             foreach (var t in result)
             {
-                Console.WriteLine($"{t.Id}\t{t.TeacherId}\t{t.Level}\t{t.FirstName}\t{t.LastName}\t{t.Email}\t{t.Course}");
+                Console.WriteLine($"{t.Id}\t{t.TeacherId}\t{t.FirstName}\t{t.LastName}\t{t.Email}\t{t.Course}");
             }
 
             return result;
@@ -103,7 +100,7 @@ namespace NupatSchoolApp.Service
 
             Console.WriteLine("Teacher found:");
             Console.WriteLine("ID\tTEACHERID\tLEVEL\tFIRSTNAME\tLASTNAME\tEMAIL\tCOURSE");
-            Console.WriteLine($"{teacher.Id}\t{teacher.TeacherId}\t{teacher.Level}\t{teacher.FirstName}\t{teacher.LastName}\t{teacher.Email}\t{teacher.Course}");
+            Console.WriteLine($"{teacher.Id}\t{teacher.TeacherId}\t{teacher.FirstName}\t{teacher.LastName}\t{teacher.Email}\t{teacher.Course}");
 
             return teacher;
         }

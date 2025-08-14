@@ -8,7 +8,9 @@ namespace NupatSchoolApp.Models.Entities
 {
     public class Teacher : Person
     {
+        public string TeacherId { get; set; }
         public string Course { get; set; }
         public List<Level> Levels { get; set; }
+
     }
 }
